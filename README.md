@@ -1,6 +1,13 @@
-# 📝 Notes API (Go)
+# Notes API — SQLite/in‑memory storage with middleware in Go
 
 A production-ready REST API for note management with SQLite/in-memory storage, middleware architecture, and authentication. Demonstrates advanced Go web development patterns, database integration, and enterprise-level API design.
+
+Quick links:
+- Entrypoint: `main.go`
+- Router: `router.go`
+- Middleware: `middleware/`
+- Repository: `repository/`
+- SQLite setup: `database/sqlite.go`
 
 ---
 
@@ -34,7 +41,7 @@ A fully-featured REST API showcasing enterprise patterns including middleware ch
 
 ## 🛠️ Usage
 
-```sh
+```powershell
 # Install dependencies
 go mod tidy
 
@@ -66,5 +73,22 @@ This project demonstrates:
 - **Clean Architecture:** Repository pattern and dependency injection
 
 ---
+
+## Folder map
+
+- `main.go`: App bootstrapping
+- `router.go`: Route definitions
+- `middleware/`: Auth and logging middleware
+- `model/`: Note domain model
+- `repository/`: Interfaces and storage implementations (memory/SQLite)
+- `database/sqlite.go`: SQLite wiring
+
+
+## Next steps (ideas)
+
+- Add pagination and search endpoints
+- Add migrations and schema versioning
+- Add OpenAPI/Swagger docs and validation
+
 
 **Author:** IAmSotiris
